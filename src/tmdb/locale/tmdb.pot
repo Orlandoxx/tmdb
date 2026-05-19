@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the tmdb package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: tmdb\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-03 14:49+0100\n"
+"POT-Creation-Date: 2026-05-19 16:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,144 +16,442 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-msgid " "
-msgstr ""
-
+#: ../tmdb.py:623
 msgid "Author:"
 msgstr ""
 
-msgid "Cancel"
+#: ../setup.xml
+msgid "Backdrop Resolution"
 msgstr ""
 
+#: ../setup.xml
+msgid "Backdrop Resolution:"
+msgstr ""
+
+#: ../tmdb.py:1018
+msgid "Backdrop saved!"
+msgstr ""
+
+#: ../tmdb.py:341
+msgid "Best rated movies"
+msgstr ""
+
+#: ../tmdb.py:1350
+msgid "Birthplace"
+msgstr ""
+
+#: ../tmdb.py:1348
+msgid "Born"
+msgstr ""
+
+#: ../tmdb.py:590 ../tmdb.py:597 ../tmdb.py:627 ../tmdb.py:764
+msgid "Cast"
+msgstr ""
+
+#: ../setup.xml
+msgid "Check SSL certificate"
+msgstr ""
+
+#: ../setup.xml
+msgid "Check SSL certificate:"
+msgstr ""
+
+#: ../tmdb.py:300
+msgid "Choose a movie list"
+msgstr ""
+
+#: ../tmdb.py:1199 ../tmdb.py:1551
+msgid "Collapse"
+msgstr ""
+
+#: ../tmdb.py:619
 msgid "Countries:"
 msgstr ""
 
-msgid "Cover resolution:"
+#: ../setup.xml
+msgid "Cover Resolution"
 msgstr ""
 
+#: ../setup.xml
+msgid "Cover Resolution:"
+msgstr ""
+
+#: ../setup.xml
+msgid "Cover and Backdrop Resolution"
+msgstr ""
+
+#: ../setup.xml
+msgid "Cover and Backdrop Resolution:"
+msgstr ""
+
+#: ../tmdb.py:1000
+msgid "Cover saved!"
+msgstr ""
+
+#: ../tmdb.py:779
 msgid "Crew"
 msgstr ""
 
-msgid "Delete EIT file?"
+#: ../tmdb.py:336
+msgid "Current movies in cinemas"
 msgstr ""
 
+#: ../tmdb.py:449
+msgid "Data not found!"
+msgstr ""
+
+#: ../tmdb.py:650
+msgid "Delete movie EIT file"
+msgstr ""
+
+#: ../tmdb.py:307 ../tmdb.py:1074 ../tmdb.py:1197
 msgid "Details"
 msgstr ""
 
+#: ../tmdb.py:1448
 msgid "Details down"
 msgstr ""
 
+#: ../tmdb.py:1449
 msgid "Details up"
 msgstr ""
 
+#: ../tmdb.py:1352
+msgid "Died"
+msgstr ""
+
+#: ../tmdb.py:621
 msgid "Director:"
 msgstr ""
 
+#: ../tmdb.py:1039
 msgid "EIT file deleted!"
 msgstr ""
 
+#: ../tmdb.py:299 ../tmdb.py:302 ../tmdb.py:308
 msgid "Edit search"
 msgstr ""
 
-msgid "Episodes"
-msgstr ""
-
+#: ../tmdb.py:290 ../tmdb.py:297 ../tmdb.py:306 ../tmdb.py:335 ../tmdb.py:591
+#: ../tmdb.py:596 ../tmdb.py:626 ../tmdb.py:1061 ../tmdb.py:1066
+#: ../tmdb.py:1073 ../tmdb.py:1272 ../tmdb.py:1277 ../tmdb.py:1283
+#: ../tmdb.py:1445 ../tmdb.py:1452 ../tmdb.py:1460 ../tmdb.py:1633
+#: ../tmdb.py:1640 ../tmdb.py:1645
 msgid "Exit"
 msgstr ""
 
+#: ../tmdb.py:1199 ../tmdb.py:1461 ../tmdb.py:1551
+msgid "Expand"
+msgstr ""
+
+#: ../tmdb.py:1444 ../tmdb.py:1453
+msgid "Expand/collapse season"
+msgstr ""
+
+#: ../tmdb.py:1326
+msgid "Female"
+msgstr ""
+
+#: ../tmdb.py:599
+msgid "File operations"
+msgstr ""
+
+#: ../tmdb.py:1354
+msgid "Gender"
+msgstr ""
+
+#: ../tmdb.py:607
 msgid "Genre:"
 msgstr ""
 
+#: ../tmdb.py:1402
+msgid "Known acting credits"
+msgstr ""
+
+#: ../tmdb.py:1329
+msgid "Known as: "
+msgstr ""
+
+#: ../setup.xml
+msgid "Language"
+msgstr ""
+
+#: ../tmdb.py:316 ../setup.xml
 msgid "Language:"
 msgstr ""
 
+#: ../tmdb.py:1284
+msgid "List"
+msgstr ""
+
+#: ../tmdb.py:1278
+msgid "List shows as search results"
+msgstr ""
+
+#: ../tmdb.py:305 ../tmdb.py:605 ../tmdb.py:681 ../tmdb.py:1072 ../tmdb.py:1095
+#: ../tmdb.py:1132 ../tmdb.py:1281 ../tmdb.py:1304 ../tmdb.py:1458
+#: ../tmdb.py:1477 ../tmdb.py:1492 ../tmdb.py:1643 ../tmdb.py:1660
 msgid "Loading..."
 msgstr ""
 
+#: ../tmdb.py:310 ../tmdb.py:630 ../tmdb.py:1076
+msgid "MENU"
+msgstr ""
+
+#: ../tmdb.py:1326
+msgid "Male"
+msgstr ""
+
+#: ../tmdb.py:309 ../tmdb.py:629
+msgid "More"
+msgstr ""
+
+#: ../tmdb.py:411
 msgid "Movie"
 msgstr ""
 
+#: ../tmdb.py:1030
+msgid "Movie description saved!"
+msgstr ""
+
+#: ../tmdb.py:331 ../tmdb.py:453
 #, python-format
-msgid "No Movie information found for %s"
+msgid "No results for %s"
 msgstr ""
 
-msgid "OK"
+#: ../tmdb.py:1165
+msgid "No results found"
 msgstr ""
 
+#: ../tmdb.py:385 ../tmdb.py:710 ../tmdb.py:1105 ../tmdb.py:1125
+#: ../tmdb.py:1167 ../tmdb.py:1309 ../tmdb.py:1413 ../tmdb.py:1485
+#: ../tmdb.py:1526 ../tmdb.py:1669 ../tmdb.py:1696
+msgid "No results found, or does not respond!"
+msgstr ""
+
+#: ../tmdb.py:1694
+msgid "No reviews."
+msgstr ""
+
+#: ../tmdb.py:1326
+msgid "Non-binary"
+msgstr ""
+
+#: ../tmdb.py:314
+msgid ""
+"Original\n"
+"Title:"
+msgstr ""
+
+#: ../tmdb.py:293
+msgid "Overview down or next list page"
+msgstr ""
+
+#: ../tmdb.py:294
+msgid "Overview up or previous list page"
+msgstr ""
+
+#: ../tmdb.py:296 ../tmdb.py:595 ../tmdb.py:1064 ../tmdb.py:1276
+#: ../tmdb.py:1450 ../tmdb.py:1638
 msgid "Page down"
 msgstr ""
 
+#: ../tmdb.py:295 ../tmdb.py:594 ../tmdb.py:1065 ../tmdb.py:1275
+#: ../tmdb.py:1451 ../tmdb.py:1639
 msgid "Page up"
 msgstr ""
 
+#: ../tmdb.py:338
+msgid "Popular movies"
+msgstr ""
+
+#: ../tmdb.py:1358
+msgid "Popularity"
+msgstr ""
+
+#: ../tmdb.py:318
+msgid "Rating:"
+msgstr ""
+
+#: ../tmdb.py:340
+msgid "Recommendations"
+msgstr ""
+
+#: ../tmdb.py:278 ../tmdb.py:443 ../tmdb.py:451
+#, python-format
+msgid "Results for %s"
+msgstr ""
+
+#: ../tmdb.py:1636
+msgid "Review down"
+msgstr ""
+
+#: ../tmdb.py:1637
+msgid "Review up"
+msgstr ""
+
+#: ../tmdb.py:601
+msgid "Reviews"
+msgstr ""
+
+#: ../tmdb.py:615
 msgid "Runtime:"
 msgstr ""
 
-msgid "Save TMDb movie infos to file"
+#: ../tmdb.py:652
+msgid "Save movie backdrop"
 msgstr ""
 
+#: ../tmdb.py:651
+msgid "Save movie cover"
+msgstr ""
+
+#: ../tmdb.py:649
+msgid "Save movie description"
+msgstr ""
+
+#: ../tmdb.py:359
+#, python-format
+msgid "Search for %s ..."
+msgstr ""
+
+#: ../tmdb.py:555
 msgid "Search for Movie:"
 msgstr ""
 
+#: ../tmdb.py:837
 msgid "Season"
 msgstr ""
 
+#: ../tmdb.py:598 ../tmdb.py:628 ../tmdb.py:839
 msgid "Seasons"
 msgstr ""
 
+#: ../tmdb.py:940
+msgid "Select Video"
+msgstr ""
+
+#: ../tmdb.py:292 ../tmdb.py:593 ../tmdb.py:1062 ../tmdb.py:1274
+#: ../tmdb.py:1447 ../tmdb.py:1635
 msgid "Selection down"
 msgstr ""
 
+#: ../tmdb.py:291 ../tmdb.py:592 ../tmdb.py:1063 ../tmdb.py:1273
+#: ../tmdb.py:1446 ../tmdb.py:1634
 msgid "Selection up"
 msgstr ""
 
+#: ../tmdb.py:411
 msgid "Series"
 msgstr ""
 
+#: ../plugin.py:91
+msgid "Settings for The Movie Database."
+msgstr ""
+
+#: ../tmdb.py:301 ../tmdb.py:600 ../tmdb.py:1068 ../tmdb.py:1069
+#: ../tmdb.py:1075 ../tmdb.py:1454 ../tmdb.py:1455 ../tmdb.py:1462
 msgid "Setup"
 msgstr ""
 
+#: ../tmdb.py:602
+msgid "Show Trailer"
+msgstr ""
+
+#: ../tmdb.py:289 ../tmdb.py:298 ../tmdb.py:1060 ../tmdb.py:1067
 msgid "Show details"
 msgstr ""
 
-msgid "Show details if single result:"
+#: ../setup.xml
+msgid "Show details if single result"
 msgstr ""
 
+#: ../plugin.py:23 ../tmdb.py:70
+msgid "Show movie details from TMDB"
+msgstr ""
+
+#: ../tmdb.py:339
+msgid "Similar movies"
+msgstr ""
+
+#: ../tmdb.py:625
 msgid "Studio:"
 msgstr ""
 
-#, python-format
-msgid "TMDB: Results for %s"
+#: ../setup.xml
+msgid "TMDB API Key"
 msgstr ""
 
-msgid "TMDb"
+#: ../setup.xml
+msgid "TMDB API Key:"
 msgstr ""
 
-msgid "TMDb ... function for Movielist"
+#: ../setup.xml
+msgid "TMDB Settings"
 msgstr ""
 
-msgid "TMDb Infos ..."
+#: ../plugin.py:88 ../plugin.py:89 ../plugin.py:90
+msgid "TMDB search"
 msgstr ""
 
-msgid "TMDb information created!"
+#: ../plugin.py:91
+msgid "TMDB settings"
 msgstr ""
 
-msgid "TMDb: No results found, or does not respond!"
+#: ../tmdb.py:278 ../tmdb.py:305 ../tmdb.py:331 ../tmdb.py:359 ../tmdb.py:385
+#: ../tmdb.py:441 ../tmdb.py:443 ../tmdb.py:449 ../tmdb.py:451 ../tmdb.py:453
+#: ../tmdb.py:605 ../tmdb.py:681 ../tmdb.py:710 ../tmdb.py:1072 ../tmdb.py:1095
+#: ../tmdb.py:1105 ../tmdb.py:1125 ../tmdb.py:1132 ../tmdb.py:1165
+#: ../tmdb.py:1167 ../tmdb.py:1281 ../tmdb.py:1304 ../tmdb.py:1309
+#: ../tmdb.py:1413 ../tmdb.py:1458 ../tmdb.py:1477 ../tmdb.py:1485
+#: ../tmdb.py:1492 ../tmdb.py:1526 ../tmdb.py:1643 ../tmdb.py:1660
+#: ../tmdb.py:1669 ../tmdb.py:1696
+msgid "TMDB: "
 msgstr ""
 
-#, python-format
-msgid "Try to find %s in tmdb ..."
+#: ../plugin.py:90
+msgid "The Movie Database gives detailed information about the selected program or movie."
 msgstr ""
 
+#: ../tmdb.py:337
+msgid "Upcoming movies"
+msgstr ""
+
+#: ../tmdb.py:815
 msgid "Various"
 msgstr ""
 
+#: ../tmdb.py:612
 msgid "Votes:"
 msgstr ""
 
-msgid "Write TMDb Information?"
-msgstr ""
-
+#: ../tmdb.py:617
 msgid "Year:"
 msgstr ""
+
+#: ../tmdb.py:441
+msgid "page "
+msgstr ""
+
+#: ../tmdb.py:828
+#, python-brace-format
+msgid "{n} Episode"
+msgid_plural "{n} Episodes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../tmdb.py:828
+#, python-brace-format
+msgid "{n} Season"
+msgid_plural "{n} Seasons"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../tmdb.py:1391
+#, python-brace-format
+msgid "{n} episode"
+msgid_plural "{n} episodes"
+msgstr[0] ""
+msgstr[1] ""
