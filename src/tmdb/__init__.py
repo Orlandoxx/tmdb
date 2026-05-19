@@ -19,7 +19,7 @@ def _(txt):
 	return t
 
 
-def _s(singular, plural, n):
+def ngettext(singular, plural, n):
 	t = gettext.dngettext(PluginLanguageDomain, singular, plural, n)
 	if t in (singular, plural):
 		# print("[TMDB] fallback to default Enigma2 Translation for %s, %s, %d" % (singular, plural, n)

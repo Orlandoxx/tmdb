@@ -42,7 +42,7 @@ from PIL import Image
 from twisted.internet.reactor import callInThread
 
 import tmdbsimple as tmdb
-from .__init__ import _, _s
+from .__init__ import _, ngettext
 from .skins import tmdbListParams, tmdbScreenSkin, tmdbScreenMovieSkin, tmdbScreenPeopleSkin, tmdbScreenPersonSkin, tmdbScreenSeasonSkin, tmdbScreenReviewsSkin
 
 from Components.SystemInfo import BoxInfo
@@ -825,7 +825,7 @@ class tmdbScreenMovie(Screen, HelpableScreen, CoverHelper):
 			# Runtime
 			seasons = json_data.get("number_of_seasons", "")
 			episodes = json_data.get("number_of_episodes", "")
-			runtime = f"{seasons} {_s('Season', 'Seasons', seasons)} / {episodes} {_s('Episode', 'Episodes', episodes)}"
+			runtime = f"{ngettext('{n} Season', '{n} Seasons', seasons).format(n=seasons)} / {ngettext('{n} Episode', '{n} Episodes', episodes).format(n=episodes)}"
 			self['runtime'].setText(runtime)
 
 			# Series Description
@@ -1388,7 +1388,7 @@ class tmdbScreenPerson(Screen, HelpableScreen, CoverHelper):
 							extra.append(character)
 						episodes = "episode_count" in cast and cast['episode_count']
 						if episodes:
-							extra.append(f"{episodes} {_s('episode', 'episodes', episodes)}")
+							extra.append(ngettext("{n} episode", "{n} episodes", episodes).format(n=episodes))
 						character = f" ({'; '.join(extra)})" if extra else ""
 					datac = f"{date} {title}{character}"
 					data_movies.append((datac, cast))
