@@ -43,7 +43,7 @@ msgstr "Miejsce urodzenia"
 
 #: ../tmdb.py:1348
 msgid "Born"
-msgstr "Urodzić się w"
+msgstr "Urodził/a się w"
 
 #: ../tmdb.py:590 ../tmdb.py:597 ../tmdb.py:627 ../tmdb.py:764
 msgid "Cast"
