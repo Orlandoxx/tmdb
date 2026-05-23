@@ -3,23 +3,23 @@ msgstr ""
 "Project-Id-Version: tmdb\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-19 16:18+0200\n"
-"PO-Revision-Date: 2024-10-17 16:48+0300\n"
+"PO-Revision-Date: 2026-05-23 09:30+0300\n"
 "Last-Translator: orlandox\n"
 "Language-Team: orlandox\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.9\n"
 
 #: ../tmdb.py:623
 msgid "Author:"
 msgstr "Tekijä:"
 
 #: ../setup.xml
-#, fuzzy
 msgid "Backdrop Resolution"
-msgstr "Taustan resoluutio:"
+msgstr "Taustan resoluutio"
 
 #: ../setup.xml
 msgid "Backdrop Resolution:"
@@ -35,20 +35,19 @@ msgstr "Parhaiksi arvioidut elokuvat"
 
 #: ../tmdb.py:1350
 msgid "Birthplace"
-msgstr ""
+msgstr "Syntymäpaikka"
 
 #: ../tmdb.py:1348
 msgid "Born"
-msgstr ""
+msgstr "Syntynyt"
 
 #: ../tmdb.py:590 ../tmdb.py:597 ../tmdb.py:627 ../tmdb.py:764
 msgid "Cast"
 msgstr "Näyttelijät"
 
 #: ../setup.xml
-#, fuzzy
 msgid "Check SSL certificate"
-msgstr "Tarkista SSL-sertifikaatti:"
+msgstr "Tarkista SSL-sertifikaatti"
 
 #: ../setup.xml
 msgid "Check SSL certificate:"
@@ -56,29 +55,27 @@ msgstr "Tarkista SSL-sertifikaatti:"
 
 #: ../tmdb.py:300
 msgid "Choose a movie list"
-msgstr ""
+msgstr "Valitse elokuvaluettelo"
 
 #: ../tmdb.py:1199 ../tmdb.py:1551
 msgid "Collapse"
-msgstr ""
+msgstr "Kutista"
 
 #: ../tmdb.py:619
 msgid "Countries:"
 msgstr "Maat:"
 
 #: ../setup.xml
-#, fuzzy
 msgid "Cover Resolution"
-msgstr "Kannen resoluutio:"
+msgstr "Kannen resoluutio"
 
 #: ../setup.xml
 msgid "Cover Resolution:"
 msgstr "Kannen resoluutio:"
 
 #: ../setup.xml
-#, fuzzy
 msgid "Cover and Backdrop Resolution"
-msgstr "Kannen ja taustan resoluutio:"
+msgstr "Kannen ja taustan resoluutio"
 
 #: ../setup.xml
 msgid "Cover and Backdrop Resolution:"
@@ -90,7 +87,7 @@ msgstr "Kansi tallennettu!"
 
 #: ../tmdb.py:779
 msgid "Crew"
-msgstr ""
+msgstr "Henkilöstö"
 
 #: ../tmdb.py:336
 msgid "Current movies in cinemas"
@@ -98,7 +95,7 @@ msgstr "Tämänhetkiset elokuvat elokuvateattereissa"
 
 #: ../tmdb.py:449
 msgid "Data not found!"
-msgstr ""
+msgstr "Tietoja ei löydy!"
 
 #: ../tmdb.py:650
 msgid "Delete movie EIT file"
@@ -118,7 +115,7 @@ msgstr "Yksityiskohdat ylös"
 
 #: ../tmdb.py:1352
 msgid "Died"
-msgstr ""
+msgstr "Kuollut"
 
 #: ../tmdb.py:621
 msgid "Director:"
@@ -142,25 +139,23 @@ msgstr "Poistu"
 
 #: ../tmdb.py:1199 ../tmdb.py:1461 ../tmdb.py:1551
 msgid "Expand"
-msgstr ""
+msgstr "Laajenna"
 
 #: ../tmdb.py:1444 ../tmdb.py:1453
 msgid "Expand/collapse season"
-msgstr ""
+msgstr "Laajenna/kutista kausi"
 
 #: ../tmdb.py:1326
-#, fuzzy
 msgid "Female"
-msgstr "nainen"
+msgstr "Naispuolinen"
 
 #: ../tmdb.py:599
-#, fuzzy
 msgid "File operations"
-msgstr "Suositukset"
+msgstr "Tiedostotoiminnot"
 
 #: ../tmdb.py:1354
 msgid "Gender"
-msgstr ""
+msgstr "Sukupuoli"
 
 #: ../tmdb.py:607
 msgid "Genre:"
@@ -168,17 +163,15 @@ msgstr "Laji:"
 
 #: ../tmdb.py:1402
 msgid "Known acting credits"
-msgstr ""
+msgstr "Tunnetut näyttelijäntyöt"
 
 #: ../tmdb.py:1329
-#, fuzzy
 msgid "Known as: "
-msgstr "Tunnettu:"
+msgstr "Tunnetaan nimellä: "
 
 #: ../setup.xml
-#, fuzzy
 msgid "Language"
-msgstr "Kieli:"
+msgstr "Kieli"
 
 #: ../tmdb.py:316 ../setup.xml
 msgid "Language:"
@@ -186,11 +179,11 @@ msgstr "Kieli:"
 
 #: ../tmdb.py:1284
 msgid "List"
-msgstr ""
+msgstr "Lista"
 
 #: ../tmdb.py:1278
 msgid "List shows as search results"
-msgstr ""
+msgstr "Lista näkyy hakutuloksina"
 
 #: ../tmdb.py:305 ../tmdb.py:605 ../tmdb.py:681 ../tmdb.py:1072 ../tmdb.py:1095
 #: ../tmdb.py:1132 ../tmdb.py:1281 ../tmdb.py:1304 ../tmdb.py:1458
@@ -204,7 +197,7 @@ msgstr "MENU"
 
 #: ../tmdb.py:1326
 msgid "Male"
-msgstr ""
+msgstr "Miespuolinen"
 
 #: ../tmdb.py:309 ../tmdb.py:629
 msgid "More"
@@ -224,9 +217,8 @@ msgid "No results for %s"
 msgstr "Ei tuloksia haulle: %s"
 
 #: ../tmdb.py:1165
-#, fuzzy
 msgid "No results found"
-msgstr "Ei tuloksia haulle: %s"
+msgstr "Tuloksia ei löytynyt"
 
 #: ../tmdb.py:385 ../tmdb.py:710 ../tmdb.py:1105 ../tmdb.py:1125
 #: ../tmdb.py:1167 ../tmdb.py:1309 ../tmdb.py:1413 ../tmdb.py:1485
@@ -236,25 +228,27 @@ msgstr "Ei tuloksia tai ei vastaa!"
 
 #: ../tmdb.py:1694
 msgid "No reviews."
-msgstr ""
+msgstr "Ei arvosteluja."
 
 #: ../tmdb.py:1326
 msgid "Non-binary"
-msgstr ""
+msgstr "Ei-binäärinen"
 
 #: ../tmdb.py:314
 msgid ""
 "Original\n"
 "Title:"
 msgstr ""
+"Alkuperäinen\n"
+"nimi:"
 
 #: ../tmdb.py:293
 msgid "Overview down or next list page"
-msgstr ""
+msgstr "Yleiskatsaus alas tai seuraavalle listasivulle"
 
 #: ../tmdb.py:294
 msgid "Overview up or previous list page"
-msgstr ""
+msgstr "Yleiskatsaus ylös tai edelliselle listasivulle"
 
 #: ../tmdb.py:296 ../tmdb.py:595 ../tmdb.py:1064 ../tmdb.py:1276
 #: ../tmdb.py:1450 ../tmdb.py:1638
@@ -276,7 +270,7 @@ msgstr "Suosio"
 
 #: ../tmdb.py:318
 msgid "Rating:"
-msgstr ""
+msgstr "Arvosana:"
 
 #: ../tmdb.py:340
 msgid "Recommendations"
@@ -288,17 +282,16 @@ msgid "Results for %s"
 msgstr "Tulokset: %s"
 
 #: ../tmdb.py:1636
-#, fuzzy
 msgid "Review down"
-msgstr "Yksityiskohdat alas"
+msgstr "Arvostelu alas"
 
 #: ../tmdb.py:1637
 msgid "Review up"
-msgstr ""
+msgstr "Arvostelu ylös"
 
 #: ../tmdb.py:601
 msgid "Reviews"
-msgstr ""
+msgstr "Arvostelut"
 
 #: ../tmdb.py:615
 msgid "Runtime:"
@@ -334,9 +327,8 @@ msgid "Seasons"
 msgstr "Kaudet"
 
 #: ../tmdb.py:940
-#, fuzzy
 msgid "Select Video"
-msgstr "Valinta alas"
+msgstr "Valitse video"
 
 #: ../tmdb.py:292 ../tmdb.py:593 ../tmdb.py:1062 ../tmdb.py:1274
 #: ../tmdb.py:1447 ../tmdb.py:1635
@@ -354,7 +346,7 @@ msgstr "Sarja"
 
 #: ../plugin.py:91
 msgid "Settings for The Movie Database."
-msgstr ""
+msgstr "The Movie Database -asetukset."
 
 #: ../tmdb.py:301 ../tmdb.py:600 ../tmdb.py:1068 ../tmdb.py:1069
 #: ../tmdb.py:1075 ../tmdb.py:1454 ../tmdb.py:1455 ../tmdb.py:1462
@@ -362,23 +354,20 @@ msgid "Setup"
 msgstr "Asetukset"
 
 #: ../tmdb.py:602
-#, fuzzy
 msgid "Show Trailer"
-msgstr "Näytä yksityiskohdat"
+msgstr "Näytä traileri"
 
 #: ../tmdb.py:289 ../tmdb.py:298 ../tmdb.py:1060 ../tmdb.py:1067
 msgid "Show details"
 msgstr "Näytä yksityiskohdat"
 
 #: ../setup.xml
-#, fuzzy
 msgid "Show details if single result"
-msgstr "Näytä yksityiskohdat, jos yksittäinen tulos:"
+msgstr "Näytä tiedot, jos tulos on yksi"
 
 #: ../plugin.py:23 ../tmdb.py:70
-#, fuzzy
 msgid "Show movie details from TMDB"
-msgstr "Näytä elokuvan tiedot TMDb:stä"
+msgstr "Näytä elokuvan tiedot TMDB:stä"
 
 #: ../tmdb.py:339
 msgid "Similar movies"
@@ -389,28 +378,24 @@ msgid "Studio:"
 msgstr "Studio:"
 
 #: ../setup.xml
-#, fuzzy
 msgid "TMDB API Key"
-msgstr "TMDb API-avain:"
+msgstr "TMDB API-avain"
 
 #: ../setup.xml
-#, fuzzy
 msgid "TMDB API Key:"
-msgstr "TMDb API-avain:"
+msgstr "TMDB API-avain:"
 
 #: ../setup.xml
 msgid "TMDB Settings"
 msgstr "TMDB asetukset"
 
 #: ../plugin.py:88 ../plugin.py:89 ../plugin.py:90
-#, fuzzy
 msgid "TMDB search"
-msgstr "TMDb-haku"
+msgstr "TMDB-haku"
 
 #: ../plugin.py:91
-#, fuzzy
 msgid "TMDB settings"
-msgstr "TMDB asetukset"
+msgstr "TMDB-asetukset"
 
 #: ../tmdb.py:278 ../tmdb.py:305 ../tmdb.py:331 ../tmdb.py:359 ../tmdb.py:385
 #: ../tmdb.py:441 ../tmdb.py:443 ../tmdb.py:449 ../tmdb.py:451 ../tmdb.py:453
@@ -421,7 +406,7 @@ msgstr "TMDB asetukset"
 #: ../tmdb.py:1492 ../tmdb.py:1526 ../tmdb.py:1643 ../tmdb.py:1660
 #: ../tmdb.py:1669 ../tmdb.py:1696
 msgid "TMDB: "
-msgstr ""
+msgstr "TMDB: "
 
 #: ../plugin.py:90
 msgid "The Movie Database gives detailed information about the selected program or movie."
@@ -448,22 +433,22 @@ msgid "page "
 msgstr "sivu "
 
 #: ../tmdb.py:828
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid "{n} Episode"
 msgid_plural "{n} Episodes"
-msgstr[0] "Jaksoa"
-msgstr[1] "Jaksoa"
+msgstr[0] "{n} jakso"
+msgstr[1] "{n} jaksoa"
 
 #: ../tmdb.py:828
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid "{n} Season"
 msgid_plural "{n} Seasons"
-msgstr[0] "Kausi"
-msgstr[1] "Kausi"
+msgstr[0] "{n} kausi"
+msgstr[1] "{n} kautta"
 
 #: ../tmdb.py:1391
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid "{n} episode"
 msgid_plural "{n} episodes"
-msgstr[0] "Jaksoa"
-msgstr[1] "Jaksoa"
+msgstr[0] "{n} jakso"
+msgstr[1] "{n} jaksoa"
