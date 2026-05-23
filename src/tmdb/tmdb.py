@@ -1362,7 +1362,7 @@ class tmdbScreenPerson(Screen, HelpableScreen, CoverHelper):
 				data += "\n\n"
 			data += biography
 			# Participated data
-			json_data_person = json_data_person['combined_credits']
+			json_data_person = json_data_person.get('combined_credits', {'cast': []})
 			data_movies = []
 			if "cast" in json_data_person:
 				for cast in json_data_person['cast']:
