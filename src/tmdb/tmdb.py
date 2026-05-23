@@ -1314,7 +1314,7 @@ class tmdbScreenPerson(Screen, HelpableScreen, CoverHelper):
 			self.mname = json_data_person['name']
 
 			# Personal data
-			birthday = deathday = birthplace = gender = altname = rank = biography = ""
+			birthday = deathday = birthplace = gender = altname = biography = ""
 			if "birthday" in json_data_person and json_data_person['birthday'] is not None:
 				birthday = json_data_person['birthday']
 			if "deathday" in json_data_person and json_data_person['deathday'] is not None:
