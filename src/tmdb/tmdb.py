@@ -629,7 +629,7 @@ class tmdbScreenMovie(Screen, HelpableScreen, CoverHelper):
 		self['key_blue'] = Label(_("More"))
 		self["key_menu"] = StaticText(_("MENU"))  # auto menu button
 		CoverHelper.__init__(self, True, True)
-		print("[TMDB][tmdbScreenMovie] entered")
+		# print("[TMDB][tmdbScreenMovie] entered")
 		self.onLayoutFinish.append(self.onFinish)
 
 	def onFinish(self):
@@ -679,7 +679,7 @@ class tmdbScreenMovie(Screen, HelpableScreen, CoverHelper):
 	def tmdbSearch(self):
 		self.lang = config.plugins.tmdb.lang.value
 		self['searchinfo'].setText(_("TMDB: ") + _("Loading..."))
-		print("[TMDB][tmdbScreenMovie]1 ID, self.movie: ", self.id, "   ", self.movie)
+		# print("[TMDB][tmdbScreenMovie]1 ID, self.movie: ", self.id, "   ", self.movie)
 
 		videos = None
 		try:
@@ -1081,7 +1081,7 @@ class tmdbScreenPeople(Screen, HelpableScreen, CoverHelper):
 
 	def onFinish(self):
 		# TMDB read
-		print("[TMDB] Selected: {self.mname}")
+		# print("[TMDB] Selected: {self.mname}")
 		self.showBackdrop()
 		callInThread(self.tmdbSearch)
 
@@ -1298,12 +1298,25 @@ class tmdbScreenPerson(Screen, HelpableScreen, CoverHelper):
 		self['fulldescription'].pageDown()
 
 	def tmdbSearch(self):
-		self.list = {}
+		self.list = None
 		self.lang = config.plugins.tmdb.lang.value
 		print(f"[TMDB] ID: {self.pid}")
 		self['searchinfo'].setText(_("TMDB: ") + _("Loading..."))
-		try:		# may be invalid id
-			json_data_person = tmdb.People(self.pid).info(language=self.lang, append_to_response="combined_credits")
+		try:
+			api = tmdb.People(self.pid)
+
+			# 1) Basic information
+			json_data_person = api.info(language=self.lang)
+
+			# 2) Acting credits with separate call
+			try:
+				combined = api.combined_credits(language=self.lang)
+				if not combined or "cast" not in combined or not combined["cast"]:
+					combined = api.combined_credits(language="en")
+			except Exception:
+				combined = {"cast": []}
+
+			json_data_person["combined_credits"] = combined
 		except Exception as e:
 			print(f"[TMDB] 4 tmdb.People(self.pid).info {e}")
 			self['searchinfo'].setText(_("TMDB: ") + _("No results found, or does not respond!"))
@@ -1333,9 +1346,9 @@ class tmdbScreenPerson(Screen, HelpableScreen, CoverHelper):
 			if "biography" in json_data_person:
 				biography = json_data_person['biography']
 			if biography == "" and self.lang != "en":
-				json_data_person = tmdb.People(self.pid).info(language="en")
-			if "biography" in json_data_person:
-				biography = json_data_person['biography']
+				# Fetch only biography, don't overwrite entire json_data_person
+				json_data_person_en = tmdb.People(self.pid).info(language="en")
+				biography = json_data_person_en.get("biography", biography)
 			info = []
 			age = ""
 			if birthday:
@@ -1362,10 +1375,10 @@ class tmdbScreenPerson(Screen, HelpableScreen, CoverHelper):
 				data += "\n\n"
 			data += biography
 			# Participated data
-			json_data_person = json_data_person.get('combined_credits', {'cast': []})
+			combined = json_data_person.get('combined_credits', {'cast': []})
 			data_movies = []
-			if "cast" in json_data_person:
-				for cast in json_data_person['cast']:
+			if "cast" in combined:
+				for cast in combined['cast']:
 					if cast['media_type'] == "movie":
 						if "release_date" in cast and cast['release_date']:
 							date = cast['release_date']
@@ -1394,7 +1407,10 @@ class tmdbScreenPerson(Screen, HelpableScreen, CoverHelper):
 					data_movies.append((datac, cast))
 
 			data_movies.sort(reverse=True)
-			data_movies, results = map(list, zip(*data_movies))
+
+			# Separate datac and cast directly without zip trick
+			results = [cast for datac, cast in data_movies]
+			data_movies = [datac for datac, cast in data_movies]
 			cast_movies = "\n".join(data_movies)
 			if cast_movies:
 				if data:
@@ -1420,8 +1436,12 @@ class tmdbScreenPerson(Screen, HelpableScreen, CoverHelper):
 		self.cancel()
 
 	def keyYellow(self):
-		if self.list:
+		# Only if acting credits are actually in the list
+		if isinstance(self.list, dict) and "results" in self.list and self.list["results"]:
 			self.session.open(tmdbScreen, text=self.mname, results=self.list, keepTemp=True)
+		else:
+			# No acting credits → don't open search window
+			self['searchinfo'].setText(_("TMDB: ") + _("No acting credits found"))
 
 	def cancel(self):
 		self.close(True)
