@@ -429,8 +429,19 @@ class tmdbScreen(Screen, HelpableScreen, CoverHelper):
 					lang = str(IDs['original_language'])
 				if 'vote_average' in IDs:
 					rating = f"{IDs['vote_average']:.1f} ({IDs['vote_count']})"
-				if 'overview' in IDs:
-					overview = IDs['overview']
+
+				overview = IDs.get("overview", "").strip()
+				# Fallback to English if overview is missing
+				if not overview and self.lang != "en":
+					try:
+						if media == "movie":
+							api = tmdb.Movies(IDs["id"])
+						else:
+							api = tmdb.TV(IDs["id"])
+						en_data = api.info(language="en")
+						overview = en_data.get("overview", "").strip()
+					except Exception:
+						pass
 
 				if fid or title or media:
 					res.append(((title, url_cover, media, fid, url_backdrop, otitle, lang, rating, overview),))
