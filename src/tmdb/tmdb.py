@@ -373,11 +373,11 @@ class tmdbScreen(Screen, HelpableScreen, CoverHelper):
 			elif self.actcinema == DEFAULT:
 				search = tmdb.Search()
 				json_data = search.multi(query=self.text, language=self.lang)
-				
+
 				if (not json_data or not json_data.get('results')) and self.lang != "en":
 					print(f"[TMDB] No regional results found for '{self.text}'. Retrying search in English fallback.")
 					json_data = search.multi(query=self.text, language="en")
-					
+
 			elif self.actcinema == CURRENT_MOVIES:
 				json_data = tmdb.Movies().now_playing(page=self.page, language=self.lang)
 			elif self.actcinema == UPCOMING_MOVIES:
