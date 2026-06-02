@@ -89,6 +89,8 @@ BEST_RATED_MOVIES = 6
 colorNormal = "\\c00ffffff"
 colorHighlight = "\\c00fff000"
 
+NO_DESCRIPTION = _("No description available.")
+
 
 def debug(s, flag="a"):  # pass
 	with open("/usr/lib/enigma2/python/Plugins/Extensions/tmdb/debug.txt", flag) as f:
@@ -489,7 +491,7 @@ class tmdbScreen(Screen, HelpableScreen, CoverHelper):
 			self.textDelayTimer.callback.append(boundFunction(callInThread, self.fetchLazyText, media, fid, idx))
 			self.textDelayTimer.start(300, True)
 		else:
-			self['overview'].setText(overview_text if overview_text else _("No description available."))
+			self['overview'].setText(overview_text if overview_text else NO_DESCRIPTION)
 
 		self['title'].setText(current[5])
 		self['lang'].setText(current[6])
@@ -518,7 +520,7 @@ class tmdbScreen(Screen, HelpableScreen, CoverHelper):
 
 				if self['list'].getSelectedIndex() == idx:
 					self.flat_list_data[idx][8] = overview_text
-					self['overview'].setText(overview_text if overview_text else _("No description available."))
+					self['overview'].setText(overview_text if overview_text else NO_DESCRIPTION)
 			except Exception as e:
 				print(f"[TMDB] Lazy fallback fetch failed in tmdbScreen: {e}")
 
@@ -1550,7 +1552,7 @@ class tmdbScreenSeason(Screen, HelpableScreen, CoverHelper):
 							eps.append(((title, url_cover, overview, fid, None, season, names['episode_number']),))
 					self.season_eps.append(eps)
 				except Exception as e:
-					print(f"[TMDB] Error loading season {season}: {e}")
+					print(f"[TMDB] Error load season {season}: {e}")
 
 			self.setList()
 			self['searchinfo'].setText(self.mname)
@@ -1612,7 +1614,7 @@ class tmdbScreenSeason(Screen, HelpableScreen, CoverHelper):
 		if overview_text and overview_text.strip():
 			self['data'].setText(overview_text)
 		else:
-			self['data'].setText(_("No description available."))
+			self['data'].setText(NO_DESCRIPTION)
 
 		if season_idx is None:
 			state = ""
